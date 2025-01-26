@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  height: 100%;
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #2d3643;
+}
+*::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+.overlay {
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
