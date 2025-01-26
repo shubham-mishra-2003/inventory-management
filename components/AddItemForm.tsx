@@ -67,7 +67,7 @@ const AddItemForm: React.FC<AddItemFormProps> = ({ addItem }) => {
     <div ref={modalRef}>
       <button
         style={{ background: Colors[colorScheme].tint }}
-        className="p-3 rounded-xl font-bold"
+        className="p-1 rounded-[10px] text-sm sm:p-2 sm:text-md md:text-xl font-bold"
         onClick={() => setOpen(!open)}
       >
         Add Items

@@ -65,17 +65,17 @@ const InventoryTable: React.FC<InventoryTableProps> = ({
 
   return (
     <div className="flex flex-col gap-2 h-full w-full">
-      <div className="grid border-2 border-slate-500 grid-cols-4 p-4 rounded-xl">
-        <div className="font-extrabold border-r-2 border-slate-500 text-center">
+      <div className="grid w-full text-sm sm:text-[16px] md:text-[18px] border-2 border-slate-500 grid-cols-4 p-1 sm:p-2 md:p-4 rounded-xl">
+        <div className="font-extrabold truncate border-r-2 border-slate-500 text-center">
           Item ID
         </div>
-        <div className="font-extrabold border-r-2 border-slate-500 text-center">
+        <div className="font-extrabold truncate border-r-2 border-slate-500 text-center">
           Item Name
         </div>
-        <div className="font-extrabold border-r-2 border-slate-500 text-center">
+        <div className="font-extrabold truncate border-r-2 border-slate-500 text-center">
           Category
         </div>
-        <div className="font-extrabold text-center">Quantity</div>
+        <div className="font-extrabold truncate text-center">Quantity</div>
       </div>
 
       <div
@@ -85,7 +85,7 @@ const InventoryTable: React.FC<InventoryTableProps> = ({
         {items.map((item) => (
           <div
             key={item.id}
-            className={`grid grid-cols-4 group justify-center items-center p-4 rounded-xl ${
+            className={`grid grid-cols-4 text-sm sm:text-[16px] md:text-[18px] group justify-center items-center p-1 sm:p-2 md:p-4 rounded-xl ${
               item.quantity < 10
                 ? "bg-red-400"
                 : colorScheme == "dark"
@@ -93,13 +93,13 @@ const InventoryTable: React.FC<InventoryTableProps> = ({
                 : "bg-slate-300"
             }`}
           >
-            <div className="border-r-2 font-bold border-slate-500 text-center">
+            <div className="border-r-2 truncate font-bold border-slate-500 text-center">
               {item.id}
             </div>
-            <div className="border-r-2 font-bold border-slate-500 text-center">
+            <div className="border-r-2 truncate font-bold border-slate-500 text-center">
               {item.name}
             </div>
-            <div className="border-r-2 font-bold border-slate-500 text-center">
+            <div className="border-r-2 truncate font-bold border-slate-500 text-center">
               {item.category}
             </div>
             <div className="font-bold text-center">{item.quantity}</div>

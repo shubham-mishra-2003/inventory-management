@@ -71,7 +71,7 @@ export default function Home() {
     >
       <Header />
       <h1 className="text-xl text-center font-bold mt-2">Inventory Table</h1>
-      <div className="flex flex-col gap-3 h-full w-full px-10">
+      <div className="flex flex-col gap-3 h-full w-full px-2 sm:px-7 md:px-10">
         <div className="flex justify-between w-full items-center">
           <Filter
             setFilteredCategory={setFilteredCategory}

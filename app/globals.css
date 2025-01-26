@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
+body,
+html {
   scroll-behavior: smooth;
 }
 
@@ -11,6 +12,7 @@ body, html {
   padding: 0;
   box-sizing: border-box;
 }
+
 *::-webkit-scrollbar {
   height: 100%;
   width: 5px;
