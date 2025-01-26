@@ -4,7 +4,6 @@ import { useTheme } from "@/hooks/ThemeProvider";
 import { Colors } from "./constants/Colors";
 import Header from "@/components/Header";
 import { useEffect, useState } from "react";
-import Table from "@/components/Table";
 import Filter from "@/components/Filter";
 import AddItemForm from "@/components/AddItemForm";
 import InventoryTable from "@/components/InventoryTable";

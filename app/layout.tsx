@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/hooks/ThemeProvider";
 export const metadata: Metadata = {
   title: "Inventory Management Table",
   description: "Dynamic Inventory Management Table",
-  icons: "/logoicon.png",
+  icons: "/logo-icon.png",
 };
 
 export default function RootLayout({
